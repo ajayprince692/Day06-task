@@ -37,7 +37,7 @@ console.log(Movie.rating);
 //3, Create a class to calculate UBER price
 
 class UBER{
-    constructor(kilometer,fare){
+    constructor(kilometer,fare=50){
         this.kilometer=kilometer;
         this.fare=fare;
     }
@@ -46,7 +46,7 @@ class UBER{
     }
 }
 var uber1=new UBER(10,15);
-var uber2=new UBER(12,15);
+var uber2=new UBER(12);
 console.log(uber1.price);
 console.log(uber2.price);
 
